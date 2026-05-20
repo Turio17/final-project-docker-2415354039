@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: ./apps
+    env_file:
+      - ./apps/.env
+    ports:
+      - '3000:3000'
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - usernet
+
+  db:
+    image: mysql:8.1
+    env_file:
+      - ./apps/.env
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - usernet
+
+volumes:
+  mysql-data:
+
+networks:
+  usernet:
+    driver: bridge
