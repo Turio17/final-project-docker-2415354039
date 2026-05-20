@@ -31,7 +31,7 @@ docker compose up --build
 ```
 
 **Dokumentasi/Screenshot:**
-
+![Contoh perintah](img/gambar7.png)
 
 ---
 
@@ -45,7 +45,7 @@ docker push madedianpp/app-good
 ```
 
 **Dokumentasi/Screenshot:**
-Dokumentasi/Screenshot hasil atau program saya langsung push di Git
+![Program](img/gambar2.png)
 ---
 
 ### Langkah 3: [Tulis Nama Langkah 3, Contoh: Pengujian Pull dan Run Container]
@@ -57,8 +57,7 @@ docker compose up http://localhost:3000/users
 ```
 
 **Dokumentasi/Screenshot:**
-Dokumentasi/Screenshot hasil atau program saya langsung push di Git
-
+![Struktur folder](img/gambar1.png)
 ---
 
 ## Kesimpulan
