@@ -45,7 +45,7 @@ docker push madedianpp/app-good
 ```
 
 **Dokumentasi/Screenshot:**
-![Program](img/gambar2.png)
+![Program](img/gambar10.png)
 ---
 
 ### Langkah 3: [Tulis Nama Langkah 3, Contoh: Pengujian Pull dan Run Container]
@@ -57,7 +57,8 @@ docker compose up http://localhost:3000/users
 ```
 
 **Dokumentasi/Screenshot:**
-![Struktur folder](img/gambar1.png)
+![Struktur folder](img/gambar8.png)
+![Struktur folder](img/gambar9.png)
 ---
 
 ## Kesimpulan
